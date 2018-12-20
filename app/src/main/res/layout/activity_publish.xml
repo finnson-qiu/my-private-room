@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/publishSay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_below="@+id/diary_name"
+        android:hint="开始写日记吧..."
+        android:textColorHint="#2d4342"
+        android:maxLines="10"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        android:gravity="left|top"
+        android:textCursorDrawable="@drawable/color_cursor"/>
+
+
+    <EditText
+        android:id="@+id/diary_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:gravity="bottom|center"
+        android:hint="日记标题"
+        android:textSize="25dp"
+        android:textCursorDrawable="@drawable/color_cursor"/>
+
+    <ImageView
+        android:id="@+id/diary_publish"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ios_send" />
+
+    <ImageView
+        android:id="@+id/diary_publish_cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:src="@mipmap/ios_arrow_back"
+        />
+
+</RelativeLayout>

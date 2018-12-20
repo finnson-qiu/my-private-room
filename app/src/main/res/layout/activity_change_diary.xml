@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/chge_diary_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="38dp"
+        android:gravity="bottom|center"
+        android:textColor="#000000"
+        android:textCursorDrawable="@drawable/color_cursor"/>
+
+    <EditText
+        android:id="@+id/chge_diary_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chge_diary_date"
+        android:layout_below="@+id/chge_diary_name"
+        android:gravity="left|top"
+        android:textColor="#7B939E"
+        android:textSize="22dp"
+        android:textCursorDrawable="@drawable/color_cursor"></EditText>
+
+    <TextView
+        android:id="@+id/chge_diary_date"
+        android:layout_width="220dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:textColor="#718A97"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/diary_change_confirm"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/chge_diary_content"
+        android:layout_toRightOf="@+id/chge_diary_date"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="确认"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:textColor="#7D95A0"
+        android:textSize="22dp"
+        />
+
+    <TextView
+        android:id="@+id/diary_change_cancel"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/chge_diary_content"
+        android:layout_toLeftOf="@id/chge_diary_date"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#7D95A0"
+        android:textSize="22dp" />
+
+</RelativeLayout>

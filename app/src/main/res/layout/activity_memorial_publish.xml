@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemorialPublish">
+
+    <EditText
+        android:id="@+id/memorial_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="60dp"
+        android:hint="点击输入纪念日内容"
+        android:textSize="25dp"
+        android:gravity="left|center"/>
+
+    <TextView
+        android:id="@+id/memorial_date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        android:hint="点击选择纪念日日期"
+        android:textSize="23dp"
+        android:gravity="left|center"
+        />
+
+    <ImageView
+        android:id="@+id/memorial_publish"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ios_send" />
+    <ImageView
+        android:id="@+id/memorial_publish_cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:src="@mipmap/ios_arrow_back"
+        />
+
+</RelativeLayout>

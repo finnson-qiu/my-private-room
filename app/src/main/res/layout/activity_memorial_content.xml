@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemorialContent">
+
+    <TextView
+        android:id="@+id/dis_memorial_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:layout_above="@id/dis_memorial_days"
+        android:text="纪念日"
+        />
+
+    <TextView
+        android:id="@+id/dis_memorial_days"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@id/dis_memorial_date"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:text="153"
+        />
+    <TextView
+        android:id="@+id/dis_memorial_date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:textSize="20dp"
+        android:text="起始日期"
+        />
+    <ImageView
+        android:id="@+id/memorial_content_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:src="@mipmap/ios_arrow_back"
+        />
+    <ImageView
+        android:id="@+id/memorial_delete"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="0dp"
+        android:layout_below="@+id/dis_diary_content"
+        android:src="@drawable/trash_2" />
+
+</RelativeLayout>
