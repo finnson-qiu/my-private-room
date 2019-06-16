@@ -6,11 +6,13 @@
 
     <TextView
         android:id="@+id/dis_diary_name"
-        android:layout_width="match_parent"
+        android:layout_width="240dp"
         android:layout_height="60dp"
-        android:textSize="38dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="24dp"
         android:textColor="#000000"
-        android:gravity="center|bottom"/>
+        android:gravity="center|center_vertical"
+        />
 
     <TextView
         android:id="@+id/dis_diary_content"
@@ -18,11 +20,19 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/dis_diary_name"
         android:layout_above="@+id/dis_diary_date"
+        android:layout_toRightOf="@+id/content_left"
         android:textSize="22dp"
         android:textColor="#7B939E"
-        android:text="chif"
         android:scrollbars="vertical"
         android:scrollbarStyle="insideInset"></TextView>
+
+    <TextView
+        android:id="@+id/content_left"
+        android:layout_width="14dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        />
 
     <TextView
         android:id="@+id/dis_diary_date"
@@ -32,7 +42,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="0dp"
         android:gravity="center"
-        android:textColor="#718A97"
+        android:textColor="#2d4342"
         android:textSize="20dp" />
 
     <ImageView
@@ -49,11 +59,11 @@
     <ImageView
         android:id="@+id/diary_delete"
         android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
         android:layout_below="@+id/dis_diary_content"
         android:src="@drawable/trash_2" />
 
@@ -64,6 +74,6 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="44dp"
         android:src="@drawable/edit" />
 </RelativeLayout>

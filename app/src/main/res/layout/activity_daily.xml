@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DailyActivity"
-    android:background="@drawable/love3">
+    tools:context=".DailyActivity">
 
 
 </android.support.constraint.ConstraintLayout>

@@ -13,7 +13,7 @@
         android:layout_marginTop="95dp"
         android:background="#FFFFFF"
         android:textColor="#0A0A0A"
-        android:textSize="17dp"
+        android:textSize="20dp"
         android:text="纪念日" />
 
     <Button
@@ -28,7 +28,7 @@
         android:background="#FFFFFF"
         android:text="日常"
         android:textColor="#0A0A0A"
-        android:textSize="17dp" />
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/mabt3"
@@ -43,7 +43,7 @@
         android:background="#FFFFFF"
         android:text="日记"
         android:textColor="#0A0A0A"
-        android:textSize="17dp" />
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/mabt4"
@@ -55,7 +55,7 @@
         android:layout_marginTop="0dp"
         android:background="#FFFFFF"
         android:textColor="#0A0A0A"
-        android:textSize="17dp"
+        android:textSize="20dp"
         android:text="相册" />
 
     <ImageView
@@ -67,16 +67,13 @@
         android:layout_marginTop="2dp"
         android:layout_marginRight="0dp"
         android:src="@mipmap/ios_add" />
-
-    <ImageView
-        android:id="@+id/main_back"
-        android:layout_width="30dp"
-        android:layout_height="36dp"
-        android:layout_alignParentLeft="true"
+    <!--<ImageView
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:src="@drawable/sz144"
+        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="3dp"
-        android:layout_marginTop="7dp"
-        android:src="@mipmap/ios_arrow_back" />
-
+        android:layout_marginTop="0dp"
+        />-->
 
 </RelativeLayout>

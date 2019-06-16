@@ -43,7 +43,11 @@ public class PublishActivity extends AppCompatActivity {
                             Toast.LENGTH_SHORT).show();
                 }
                 else if(temp1.length()==0&&temp2.length()==0){
-                    Toast.makeText(PublishActivity.this,"日记内容和标题不能为空",
+                    Toast.makeText(PublishActivity.this,"日记标题和内容不能为空",
+                            Toast.LENGTH_SHORT).show();
+                }
+                else if(temp2.length()>12){
+                    Toast.makeText(PublishActivity.this,"标题不大于12个汉字或字母",
                             Toast.LENGTH_SHORT).show();
                 }
                 else{

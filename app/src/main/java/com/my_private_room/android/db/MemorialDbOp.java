@@ -60,4 +60,16 @@ public class MemorialDbOp {
         str[0]=id+"";
         db.delete("Memorialday","id =?",str);
     }
+
+    public int RenewAllMemorial(int id,String pastdate){
+        SQLiteDatabase db=dbHelper.getWritableDatabase();
+        ContentValues values=new ContentValues();
+        long temp=charge(pastdate);
+        int pTndays=(int)temp;
+        values.put("days",pTndays);
+        String[] str=new String [1];
+        str[0]=id+"";
+        db.update("Memorialday",values,"name=?",str);
+        return pTndays;
+    }
 }

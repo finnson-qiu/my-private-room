@@ -71,7 +71,7 @@ public class MemorialActivity extends AppCompatActivity {
                 int id=cursor.getInt(cursor.getColumnIndex("id"));
                 String name=cursor.getString(cursor.getColumnIndex("name"));
                 String date=cursor.getString(cursor.getColumnIndex("date"));
-                int days=cursor.getInt(cursor.getColumnIndex("days"));
+                int days=dp.RenewAllMemorial(id,date);
                 memorialday=new MemorialDay(id,name,date,days);
                 memorialDayList.add(memorialday);
             }while(cursor.moveToNext());

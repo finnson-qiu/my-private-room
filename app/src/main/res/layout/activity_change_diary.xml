@@ -9,9 +9,10 @@
         android:id="@+id/chge_diary_name"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:textSize="38dp"
-        android:gravity="bottom|center"
+        android:textSize="30dp"
+        android:gravity="center_horizontal|bottom"
         android:textColor="#000000"
+        android:text="吃的"
         android:textCursorDrawable="@drawable/color_cursor"/>
 
     <EditText
@@ -49,8 +50,7 @@
         android:layout_marginBottom="0dp"
         android:text="确认"
         android:gravity="center"
-        android:background="#FFFFFF"
-        android:textColor="#7D95A0"
+        android:textColor="#2d4342"
         android:textSize="22dp"
         />
 
@@ -64,10 +64,9 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
         android:layout_marginBottom="0dp"
-        android:background="#FFFFFF"
         android:gravity="center"
         android:text="取消"
-        android:textColor="#7D95A0"
+        android:textColor="#2d4342"
         android:textSize="22dp" />
 
 </RelativeLayout>

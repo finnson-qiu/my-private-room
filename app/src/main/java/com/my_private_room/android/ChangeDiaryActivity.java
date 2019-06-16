@@ -68,17 +68,37 @@ public class ChangeDiaryActivity extends AppCompatActivity {
                         MyDatabaseHelper dbhelper=new MyDatabaseHelper(ChangeDiaryActivity.this,"PrivateRoom.db",null,3);
                         EditText editText11=(EditText)findViewById(R.id.chge_diary_name);
                         EditText editText22=(EditText)findViewById(R.id.chge_diary_content);
-                        diary_name=editText11.getText().toString();
-                        diary_content=editText22.getText().toString();
-                        Diary diary=new Diary(diary_id,diary_name,diary_content,diary_date);
-                        DiaryDbOp dp=new DiaryDbOp(diary,dbhelper);
-                        dp.ChangeDiary();
-                        Intent intent1=new Intent();
-                        intent1.putExtra("return_name",diary_name);
-                        intent1.putExtra("return_content",diary_content);
-                        setResult(RESULT_OK,intent1);
-                        Toast.makeText(ChangeDiaryActivity.this,"修改成功！",Toast.LENGTH_SHORT).show();
-                        finish();
+                        String temp1=editText11.getText().toString();
+                        String temp2=editText22.getText().toString();
+                        if(temp1.length()==0&&temp2.length()==0){
+                            Toast.makeText(ChangeDiaryActivity.this,"日记标题和内容不能为空",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                        else if(temp1.length()==0){
+                            Toast.makeText(ChangeDiaryActivity.this,"日记标题不能为空",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                        else if(temp2.length()==0){
+                            Toast.makeText(ChangeDiaryActivity.this,"日记内容不能为空",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                        else if(temp1.length()>12){
+                            Toast.makeText(ChangeDiaryActivity.this,"标题不大于12个汉字或字母",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                        else {
+                            diary_name = editText11.getText().toString();
+                            diary_content = editText22.getText().toString();
+                            Diary diary = new Diary(diary_id, diary_name, diary_content, diary_date);
+                            DiaryDbOp dp = new DiaryDbOp(diary, dbhelper);
+                            dp.ChangeDiary();
+                            Intent intent1 = new Intent();
+                            intent1.putExtra("return_name", diary_name);
+                            intent1.putExtra("return_content", diary_content);
+                            setResult(RESULT_OK, intent1);
+                            Toast.makeText(ChangeDiaryActivity.this, "修改成功！", Toast.LENGTH_SHORT).show();
+                            finish();
+                        }
                     }
                 });
                 dialog.setNegativeButton("取消", new DialogInterface.OnClickListener() {
